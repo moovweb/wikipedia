@@ -3,12 +3,12 @@ rewriter:
     - matcher: ^m[a-z]*\.wikipedia.org
       replacement: www.wikipedia.org
     - matcher: m[a-z]*\.([a-z0-9\-\.]*wikipedia.org)
-      replacement: \1
+      replacement: $1
   link:
     host: m(?<prefix>[a-z]*)\.[a-z0-9\-\.]*wikipedia.org
     matcher: (^|\/\/|\"|\')(?!m$prefix\.)(www\.)?([a-z0-9\-\.]*)wikipedia.org
-    replacement: \1m$prefix.\3wikipedia.org
+    replacement: $1m$prefix.$3wikipedia.org
   cookie_domain:
-    matcher: \.?(www\.)?([a-z0-9\-\.]*wikipedia.org)
-    replacement: .\2
+    matcher: \.?(www\.)?([a-z0-9\-\.]*(wikipedia.org))
+    replacement: .$3
 

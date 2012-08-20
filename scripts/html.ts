@@ -5,7 +5,7 @@ $("/html") {
   absolutize_srcs()
   
   # Remove all script tags not marked with "data-keep" attribute
-  remove_desktop_js();
+  # remove_desktop_js()
 
   
   
@@ -18,5 +18,23 @@ $("/html") {
 
   # Late load all the images on the site
   # lateload()
+
+  $("./body"){
+
+    attribute("id", "_homepage")
+
+    $$("#mp-topbanner"){
+      remove()
+    }
+
+    $(".//table[@id='mp-lower']"){
+      move_to("..", "top")
+    }
+
+    $(".//div[@id='mw-content-text']//table//h2"){
+      attribute("class", "pill")
+      remove("@style")
+    }
+  }
 }
 

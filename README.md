@@ -1,3 +1,8 @@
+## Notes
+
+If you want a perfect proxy, go into main.scss and comment out _reset.scss and _base.scss. 
+Go into html.ts and comment out the remove_desktop_js() function. 
+
 ## Basics
 This project works with the MoovSDK.
 

@@ -1,0 +1,6 @@
+---
+- :output_file: main.js
+  :input_directory: main
+  :input_files:
+  - host_map.js
+

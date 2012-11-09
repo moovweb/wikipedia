@@ -21,7 +21,7 @@ $("/html") {
 
   $("./body"){
 
-    attribute("id", "_homepage")
+    add_class("_home")
 
     $$("#mp-topbanner"){
       remove()

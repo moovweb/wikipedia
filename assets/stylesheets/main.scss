@@ -1,7 +1,3 @@
-// Stylesheets containing sprite-sheet info will be deposited into the 'globals' folder.
-// Include them below as needed; e.g.:
-// @import "globals/_icons.scss";
-
 // Reset CSS
 // @import "globals/_reset.scss";
 
@@ -21,8 +17,8 @@
 //   color: red;
 // }
 
-#_homepage{
-  .pill{
+._homep {
+  .pill {
     border-radius: 10px;
     text-align: left;
     border: 1px solid #ddd;
@@ -30,6 +26,6 @@
   }
 }
 
-#p-logo a{
-  background: image-url("https://s3.amazonaws.com/moovweb-apollo/wiki-logo.png") !important;
+#p-logo a {
+  background: image-url("wiki-logo.png") !important;
 }

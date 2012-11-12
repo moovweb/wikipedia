@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 lib/*.ts
 .rvmrc
 tmp/
@@ -38,4 +37,3 @@ doc/
 
 assets/.sass-cache
 assets/stylesheets/.css
->>>>>>> 51bd1bf375b4ef94e104bcec8129b2362a261eab
